@@ -346,7 +346,10 @@ section h2{
      .info h4{
           width:calc(100% / 2 );
      }
-     .service-item , .swiper-body .swiper-slide{
+     .service-item{
+          width:calc(100% / 2 - 10px);
+     }
+          .swiper-body .swiper-slide{
           width:calc(100% / 2 - 20px);
      }
 }
@@ -496,13 +499,19 @@ section h2{
      .info h4{
           width:calc(100% / 2 );
      }
-     .service-item , .swiper-body .swiper-slide{
+     .service-item{
+          width:calc(100% / 2 - 10px);
+     }
+     .swiper-body .swiper-slide{
           width:calc(100% / 2 - 20px);
      }
    }
    @media only screen and (max-width: 550px){
-     .service-item , .swiper-body .swiper-slide{
-          width:calc(100% / 1 );
+     .service-item{
+          width:calc(100% / 1);
+     }
+     .swiper-body .swiper-slide{
+          width:calc(100% / 1 - 20px);
      }
    }
    Body{
