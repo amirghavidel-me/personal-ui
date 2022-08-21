@@ -1,0 +1,617 @@
+
+@font-face {
+     font-family: mikhak ;
+     src: url(../fonts/Mikhak-Medium.woff2);
+}
+*{
+     box-sizing: border-box;
+     margin: 0px;
+     padding: 0px;
+     outline: none;
+     text-decoration: none;
+     list-style: none;
+     
+}
+h1 , h2 , h3 , h4 , h5 , h6 , span , a , p , button {
+     font-family: mikhak ;
+     direction: rtl;
+     text-align:justify;
+     text-decoration: none;
+     list-style: none;
+     letter-spacing: 0 !important;
+     cursor:default;
+}
+a{
+     cursor:pointer;
+}
+body{
+     background-color: #e0e0e7;
+     font-family: mikhak ;
+     position: relative;
+}
+.app{
+     margin-left: auto;
+     margin-right: auto;
+     position: fixed;
+     top: 15px;
+     bottom: 15px;
+     left: 15px;
+     right: 15px;
+     display: flex;
+     justify-content:space-between;
+     z-index: 0;
+     overflow: hidden;
+}
+
+section h2{
+     font-size: 16px;
+}
+
+.card-profile{
+     background-color: #ffffff;
+     width: 24%;
+     z-index: 1;
+     box-shadow: 0 0 20px -15px rgb(0, 0, 0);
+}
+.card-continer{
+     padding: 20px;
+     width: 70%;
+     z-index: 2;
+     overflow: auto;
+     -webkit-overflow-scrolling:touch;
+}
+.card-continer::-webkit-scrollbar {
+     width: 4px;
+     background-color:#b9b9b9;
+ } 
+.card-continer::-webkit-scrollbar-thumb { 
+     background-color:#7322dd;
+ }
+.card-continer::-webkit-scrollbar-thumb:hover{ 
+     background-color: #dd33ff;
+}
+.baner img{
+     width: 100%;
+     height: 400px;
+     box-shadow: 0 0 20px -15px rgb(0, 0, 0);
+}
+.info{
+     margin: 25px 0px;
+     display: flex;
+     justify-content: space-between;
+}
+.info h4{
+     color: #1e1e28;
+     font-size: 14px;
+     text-align: center;
+     margin-top: 15px;
+}
+.info h4 span{
+     color: #6200ff;
+     font-size: 25px;
+}  
+.services{
+     display: flex;
+     justify-content:space-between;
+     flex-wrap: wrap;
+}
+.service-item{
+     margin-top: 15px;
+     padding: 20px;
+     background-color: #ffffff;
+     width:calc(100% / 3 - 12px);
+     height: auto;
+     box-shadow: 0 0 20px -15px rgb(0, 0, 0);
+     text-align: right;
+     align-items: stretch;
+     transition: 0.5s all ease;
+}
+.service-item h3{
+     color: #1e1e28;
+     font-size: 16px;
+}
+.service-item p{
+     margin-top: 15px;
+     margin-bottom: 10px;
+     color: #5c5c6f;
+     font-size: 13px;
+}
+.service-item a{
+     color: #6200ff;
+     font-size: 12px;
+     font-weight: 600;
+}
+.service-item:hover{
+     background-color: #6200ff;
+}
+.service-item:hover h3{
+     color: #fff;
+}
+.service-item:hover p{
+     color: rgb(214, 214, 214);
+}
+.service-item:hover a{
+     color: #fff;
+}
+.service-item:hover a:hover{
+     color:#ff94fa;
+}
+.products{
+     display: flex;
+     justify-content:space-between;
+     flex-wrap: wrap;
+}
+.product-item{
+     margin-top: 15px;
+     padding: 20px;
+     background-color: #ffffff;
+     width:calc(100% / 3 - 12px);
+     height: auto;
+     box-shadow: 0 0 20px -15px rgb(0, 0, 0);
+     text-align: center !important;
+}
+.product-item h4{
+     color: #1e1e28;
+     font-size: 18px;
+     text-align: center;
+}
+.product-item h3{
+     color: #31313b;
+     font-size: 14px;
+     text-align: center;
+     margin-top: 15px;
+}
+.product-item h3 span{
+     color: #6200ff;
+     font-size: 25px;
+}
+.product-item ul{
+     margin-top: 15px;
+     margin-bottom: 10px;
+}
+.product-item ul li{
+     color: #5c5c6f;
+     font-size: 13px;
+     text-align: center;
+}
+.product-item a{
+     color: #6200ff;
+     font-size: 12px;
+     font-weight: 600;
+     text-align: center;
+}
+.bar span{
+     display: none;
+}
+.card-menu{
+     background-color: #ffffff;
+     width: 6%;
+     z-index: 1;
+     box-shadow: 0 0 20px -15px rgb(0, 0, 0);
+     text-align: center;
+     padding: 10px 0px;
+}
+.card-menu ul{
+     display: flex;
+     flex-flow: column;
+     justify-content: space-between;
+     height: 100%;
+}
+.card-menu ul li {
+     color: #31313b;
+     font-size: 13px;
+     cursor: pointer;
+}
+.card-menu ul li:hover{
+     color:#7322dd;
+}
+.card-profile{
+     display: flex;
+     flex-flow: column;
+}
+.user{
+     height: 40%;
+     background-color: rgb(255, 255, 255);
+     padding: 40px 0px;
+     display: flex;
+     flex-flow: column;
+     text-align: center !important;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 0px 5px 10px -10px rgb(0, 0, 0);
+     z-index: 2;
+}
+.user img{
+     width: 100px;
+     height: 100px;
+     border-radius: 100%;
+     box-shadow: 0 0 20px -15px rgb(0, 0, 0);
+}
+.user a {
+     margin: 15px 0px;
+     color : black;
+     font-size: 16px;
+     font-weight: 600;
+}
+.user p {
+     font-size: 14px;
+     font-weight: 400;
+     color:#5c5c6f
+}
+.user-info{
+     background-color: #f4f4f6;
+     padding: 20px;
+     overflow: auto;
+     -webkit-overflow-scrolling:touch;
+     height: 55%;
+}
+.user-info::-webkit-scrollbar {
+     width: 4px;
+     background-color: #b9b9b9;
+}
+.user-info::-webkit-scrollbar-thumb{
+     background-color: #7322dd;
+}
+.user-info::-webkit-scrollbar-thumb:hover{ 
+     background-color: #dd33ff;
+}
+.user-abute{
+     width: 100%;
+}
+.user-abute div ul {
+     display: flex;
+     flex-flow: column;
+}
+.user-abute div ul li {
+     direction: rtl;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.user-abute div ul li h6 , .user-abute div ul li span{
+     font-size: 12px;
+     color:#5c5c6f;
+     margin: 5px 0px;
+}
+.user-social{
+     background-color: #ffffff;
+     color: #6200ff;
+     height: 5%;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     cursor:default;
+}
+.user-social button{
+     background-color:transparent;
+     border: 0px;
+     outline: none;
+     width: 100%;
+     text-align: center;
+     cursor: pointer;
+}
+.user-social button:hover{
+     color: #e100ff;
+}
+.info h4{
+     width:calc(100% / 4 );
+}
+@media only screen and (max-width: 1100px) {
+     .card-menu ul li {
+          color: #31313b;
+          font-size: 11px;
+          cursor: pointer;
+     }
+     .user-abute div ul li h6 , .user-abute div ul li span{
+          font-size: 10px;
+     }
+     .info{
+          display: flex;
+          flex-wrap:wrap
+     }
+     .info h4{
+          width:calc(100% / 2 );
+     }
+     .service-item , .product-item{
+          width:calc(100% / 2 - 10px);
+     }
+}
+
+@media only screen and (max-width: 950px) {  
+     .user-abute div ul li h6 , .user-abute div ul li span{
+          font-size: 12px;
+     }
+     .app{
+          display: flex;
+          position: static;
+          flex-flow: column;
+          width: 100%;
+          height: auto;
+     }
+     .card-continer{
+          display: block;
+          width: 100%;
+          order: 3;
+          height: auto;
+          padding: 10px;
+     }
+     .card-menu{
+          padding: 0;
+
+          width: 100%;
+          order:1;
+          height: auto;
+          z-index: 90000;
+          position: relative;
+     }
+     .bar span{
+          display: inline-block;
+     }
+     .bar{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 50px;
+          z-index: 5;
+          background-color: rgb(230, 230, 230);
+     }
+     .bar-item{
+          left: -500px;
+          top:0px;
+          bottom: 0px;
+          width: 150px;
+          padding: 20px;
+          background-color: rgba(30, 30, 40, 0.897);
+          position:fixed;
+          z-index: 4;
+          animation-name: close;
+          animation-fill-mode: forwards;
+          animation-duration: 1s;
+     }
+     .card-menu ul li{
+          color: #fff;
+     }
+     @keyframes close {
+          0%{
+               left: 0px;
+          }
+          100%{
+               left: -500px;
+          }
+     }
+     .bar-anim{
+          left: -500px;
+          top:0px;
+          bottom: 0px;
+          animation-name: open;
+          animation-fill-mode: forwards;
+          animation-duration: 0.5s;
+     }
+     @keyframes open {
+          0%{
+               left: -500px;
+          }
+          100%{
+               left: 0px;
+          }
+     }
+     .menu-burger{
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+     .menu-burger .burger-inner{
+          background-color:#1e1e28;
+          width: 30px;
+          height: 2px;
+     }
+     .menu-burger .burger-inner::after ,
+     .menu-burger .burger-inner::before{
+          background-color: #1e1e28;
+          position: absolute;
+          content: " ";
+          width: 30px;
+          height: 2px;
+     }
+     .burger-inner::after{
+          transform: translate(-15px ,-11px);
+          width: 25px;
+          transition: all 0.4s;
+     }
+     .burger-inner::before{
+          transform: translate(-15px , 11px);
+          transition: all 0.4s;
+     }
+     .open .burger-inner::after{
+          transition: all 0.4s;
+          transform: translate(-15px , 0px) rotate(225deg);
+     }
+     .open .burger-inner::before{
+          transition: all 0.4s;
+          transform: translate(-15px , 0px) rotate(-225deg);
+     }
+     .open .burger-inner{
+          background-color: transparent;
+          transform: translate(0px , 0px);
+          transition: all 0.2s;
+     }
+     .baner img{
+          width: 100%;
+          height: auto;
+     }
+     .card-profile{  
+          display: flex;
+          flex-flow: column;
+          width: 100%;
+          height: auto;
+          order: 2;
+     }
+     .user-info{
+          overflow:visible;
+          height: auto;
+     }
+     .info{
+          display: flex;
+          flex-wrap:wrap
+     }
+     .info h4{
+          width:calc(100% / 2 );
+     }
+     .service-item , .product-item{
+          width:calc(100% / 2 - 10px);
+     }
+   }
+   @media only screen and (max-width: 550px){
+     .service-item , .product-item{
+          width:calc(100% / 1 );
+     }
+   }
+   Body{
+     transition: all 0.5s ease;
+   }
+   .Dark{
+     transition: all 0.5s ease;
+     background-color: #191923;
+     color: #fff;
+   }
+   .Dark .info h4{
+     color: #fff;
+     transition: all 0.5s ease;
+   }
+   .Dark .info span{
+     color: #7048ff;
+     transition: all 0.5s ease;
+   }
+   .Dark .service-item h3{
+     color: #fff;
+     transition: all 0.5s ease;
+   }
+   .Dark .service-item p{
+     color: #d6d6d6;
+     transition: all 0.5s ease;
+   }
+   .Dark .service-item a{
+     transition: all 0.5s ease;
+     color: rgb(112, 72, 255);
+   }
+   .Dark .service-item , .Dark .product-item{
+     transition: all 0.5s ease;
+     background-color: #2d2d3a;
+   }
+   .Dark .service-item:hover{
+     transition: all 0.5s ease;
+     background-color: #7048ff;
+   }
+   .Dark .service-item:hover a{
+     transition: all 0.5s ease;
+     color: #ffffff;
+   }
+   .Dark .product-item h4 , .Dark .product-item h3 , .Dark .product-item a{
+     transition: all 0.5s ease;
+     color: #ffffff;
+   }
+   .Dark .product-item ul li{
+     transition: all 0.5s ease;
+     color: #cfcfcf;
+   }
+   .Dark .card-menu{
+     transition: all 0.5s ease;
+     background-color: #252531;
+   }
+   .Dark .card-menu ul li{
+     transition: all 0.5s ease;
+     color: #ffffff;
+   }
+
+   .Dark .user , .Dark .user-social{
+     transition: all 0.5s ease;
+     background-color: #252531;
+   }
+   .Dark .user-social button{
+     color: #ffffff;
+   }
+   .Dark .user-social button:hover{
+     color: #7048ff;
+   }
+   .Dark .user a{
+     transition: all 0.5s ease;
+     color: #ffffff;
+   }
+   .Dark .user p{
+     transition: all 0.5s ease;
+     color: #d6d6d6;
+   }
+
+   .Dark .user-info {
+     transition: all 0.5s ease;    
+     background-color: #20202a;
+   }
+
+   .Dark .user-abute div ul li h6{
+     transition: all 0.5s ease;
+     color: #d6d6d6;
+   }
+   .Dark .user-abute div ul li span{
+     transition: all 0.5s ease;
+     color: #c2c2c2;
+   }
+   .Dark #btn-weather ,.Dark .weather-control input{
+     transition: all 0.5s ease;
+     background-color: #252531;
+     color: #fff
+   }
+   .Dark #btn-weather:hover {
+     background-color: #25252e;
+     color: #7048ff;
+   }
+   
+#btn-weather{
+     margin: 5px;
+     width: 40%;
+     background-color: #ffffff;
+     padding: 10px;
+     margin: 10px 0px;
+     border: 0px;
+     border-radius: 500px;
+     font-size: 12px;
+     font-weight: bold;
+     outline:none;
+     text-align: center;
+     box-shadow: 0 0 20px -15px rgb(0, 0, 0);
+     cursor: pointer;
+     transition: all 0.3s ease;
+}
+#btn-weather:hover{
+     background-color: #cbaeff;
+     transition: all 0.3s ease;
+}
+.weather-control{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.weather-control input{
+     margin: 5px;
+     width: 60%;
+     padding: 10px;
+     border-radius: 500px;
+     outline: none;
+     border: 0px;
+}
+.weather-control input ,.weather-control input:placeholder-shown , .weather-control input:focus{
+     font-size: 12px;
+     font-weight: bold;
+     font-family: mikhak;
+     color: #6363d8;
+     text-align: right;
+}
+.user-abute div ul {
+     text-align: right;
+     font-size: 12px;
+     font-weight: bold;
+}
+#br{
+     height: 15px;
+}
