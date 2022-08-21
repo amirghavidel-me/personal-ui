@@ -355,6 +355,9 @@ section h2{
 }
 
 @media only screen and (max-width: 950px) {  
+     .user-social button{
+          padding: 15px 0;
+     }
      .card-continer{
           overflow:visible;
      }
@@ -507,6 +510,9 @@ section h2{
      }
    }
    @media only screen and (max-width: 550px){
+     .user-social button{
+          padding: 15px 0;
+     }
      .service-item{
           width:calc(100% / 1);
      }
