@@ -4,6 +4,8 @@ var swiper = new Swiper(".mySwiper", {
           delay: 1200,
           disableOnInteraction: false,
         },
+        parallax: true,
+        loop:true,
      pagination: {
        el: ".swiper-pagination",
      },
